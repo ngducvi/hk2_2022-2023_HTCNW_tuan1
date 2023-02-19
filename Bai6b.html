@@ -7,41 +7,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        * {
-            /* reset lại margin và padding cho các tag */
-            margin: 0;
-            padding: 0;
+        .background {
+            background-color: rgb(228, 186, 108);
+            width: 13rem;
         }
 
-        .tableStyle {
-            width: 650px;
-            height: 500px;
-        }
-
-        .tableStyle td {
+        .background1 {
+            margin: 30px;
+            display: inline-block;
+            width: 13rem;
             padding: 10px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .tableform {
+            width: 150px;
+            height: 100px;
+            text-align: center;
+
+        }
+
+        .tableform1 {
+            width: 450px;
+            height: 110px;
+            text-align: center;
+            background-color: rgb(242, 199, 255);
+            margin: 10px;
+
+        }
+
+        .formtablec {
+            width: 465px;
+            height: 210px;
+            background-color: rgb(212, 158, 58);
+            position: absolute;
+            margin: 20px;
+        }
+
+        .grean {
+            background-color: rgb(103, 177, 229);
+        }
+
+        .tim {
+            background-color: rgb(245, 154, 250);
+        }
+
+        .fontxanh {
+            font-style: italic;
+            font-weight: bold;
+            color: rgb(61, 61, 250);
+
+        }
+
+        .borderfont {
+            border: rgba(109, 0, 109, 0.988);
         }
     </style>
 </head>
+<!-- <strong>: In đậm chữ viết.
+<i>: In nghiêng chứ viết.
+<u>: Gạch chân chữ viết.
+<strike>: Gạch ngang chữ viết.
+<em>: Nhấn mạnh câu.
+<code>: Định dạng cho một đoạn mã nào đó.
+<hr>: Thước kẻ ngang trên tài liệu.
+<mark>: Tô sáng chữ viết. -->
+
 
 <body>
-    <table class="tableStyle" border="1">
-        <tr>
-            <td>
-                <h1>1</h1>
-            </td>
-            <td >
-                <h1>2</h1>
-            </td>
-            <td colspan="3">3</td>
+    <div>
+        <table class="background" border="1">
+            <tr>
+            <tr>
+                <th>(1)</th>
+                <th>(2)</th>
+                <th>(3)</th>
+                <th colspan="2">(4)</th>
+                <th>(5)</th>
+            </tr>
 
-        </tr>
-        <tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="4"><u>Part I</u></td>
+                <td></td>
+            </tr>
+            <td colspan="2"></td>
+            <td colspan="3"><u>Chapter 1</u></td>
             <td></td>
-            <td colspan="3">Part I</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u> Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section B</u></td>
+                <td></td>
+            </tr>
+            </tr>
+            <td colspan="2"></td>
+            <td colspan="3"><u>Chapter 1</u></td>
             <td></td>
-        </tr>
-    </table>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section B</u></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="4"><u>Part II</u></td>
+                <td></td>
+            </tr>
+            </tr>
+            <td colspan="2"></td>
+            <td colspan="3"><u>Chapter 3</u></td>
+            <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section B</u></td>
+                <td></td>
+            </tr>
+            </tr>
+            <td colspan="2"></td>
+            <td colspan="3"><u>Chapter 4</u></td>
+            <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section A</u></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="2"><u>Section B</u></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="background1">
+        <h3>With cellpadding</h3>
+        <table class="tableform" border="1">
+
+            <tr>
+                <td>6.470</td>
+                <td>6.470</td>
+            </tr>
+            <tr>
+                <td>6.470</td>
+                <td>6.470</td>
+            </tr>
+        </table>
+    </div>
+    <div class="background1">
+        <h3>Table with spanning row:</h3>
+        <table class="tableform" border="1">
+
+            <tr>
+                <td>6.470</td>
+                <td>6.470</td>
+            </tr>
+            <tr>
+                <td rowspan="2">6.470</td>
+                <td>6.470</td>
+            </tr>
+            <tr>
+                <td>6.470</td>
+            </tr>
+        </table>
+    </div>
+    <div class="formtablec">
+        <h4 style="text-align: center; color: rgb(180, 49, 180);">NUMBERS 1-5 in VARIOUS LANGUAGES</h4>
+        <table class="tableform1" border="1">
+            <tr>
+                <td></td>
+                <td class="tim"><u><strong>English</strong></u></td>
+                <td class="tim"><u><strong>Espanol</strong></u></td>
+                <td class="tim"><u><strong>Francais</strong></u></td>
+                <td class="tim"><u><strong>Italiano</strong></u></td>
+                <td class="tim"><u><strong>Deursch</strong></u></td>
+            </tr>
+            <tr class="fontxanh">
+                <td style="color: black;background-color: aqua;">1</td>
+                <td>one</td>
+                <td>uno</td>
+                <td>un</td>
+                <td>uno</td>
+                <td>eins</td>
+            </tr>
+            <tr class="fontxanh">
+                <td style="color: black; background-color: aqua;">2</td>
+                <td>two</td>
+                <td>dos</td>
+                <td>deux</td>
+                <td>due</td>
+                <td>zwei</td>
+            </tr class="fontxanh">
+            <tr class="fontxanh">
+                <td style="color: black; background-color: aqua;">3</td>
+                <td>three</td>
+                <td>tres</td>
+                <td>trois</td>
+                <td>tre</td>
+                <td>drei</td>
+            </tr>
+            <tr class="fontxanh">
+                <td style="color: black;background-color: aqua;">4</td>
+                <td>four</td>
+                <td>cuatro</td>
+                <td>quatre</td>
+                <td>quattro</td>
+                <td>vier</td>
+            </tr>
+            <tr class="fontxanh">
+                <td style="color: black;background-color: aqua;">5</td>
+                <td>five</td>
+                <td>cinco</td>
+                <td>cinq</td>
+                <td>cinque</td>
+                <td>funf</td>
+            </tr>
+        </table>
+
+    </div>
+
 </body>
 
 </html>
